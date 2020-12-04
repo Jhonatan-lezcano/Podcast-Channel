@@ -7,9 +7,9 @@
     <title>Podcast Channel</title>
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Google Font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300&display=swap"
-        rel="stylesheet"> <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,17 +17,51 @@
         <div class="logo-container">
             <img class="logo" src="./assets/img/logo.svg" alt="Logo">
         </div>
+
+        <!-- Menu Desktop -->
         <nav class="menu-container">
             <ul class="menu">
-                <li>EPISODIOS</li>
-                <li>NOSOTROS</li>
-                <li>ENTREVISTAS</li>
-                <li>TÓPICOS</li>
+                <li><a href="#">EPISODIOS</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">ENTREVISTAS</a></li>
+                <li><a href="#">TÓPICOS</a></li>
             </ul>
         </nav>
+        <!-- End Menu Desktop -->
+
+        <!-- Menu Mobile -->
+        <input type="checkbox" id="check-menu" class="check-menu">
+        <label for="check-menu" class="container-burger">
+            <div class="burger">
+                <div class="linea linea-top"></div>
+                <div class="linea linea-med"></div>
+                <div class="linea linea-low"></div>
+            </div>
+        </label>
+
+        <ul class="menu-mobile">
+            <li class="menu-mobile-item"><a href="#">EPISODIOS</a></li>
+            <li class="menu-mobile-item"><a href="#">NOSOTROS</a></li>
+            <li class="menu-mobile-item"><a href="#">ENTREVISTAS</a></li>
+            <li class="menu-mobile-item"><a href="#">TÓPICOS</a></li>
+        </ul>
+        <!-- End Menu Mobile -->
     </header>
 
-    
+    <section class="hello-world">
+
+        <h1 class="title fontF-title">Hello <span class="world fontF-title">world</span> 
+            pale blue dot<span class="dot fontF-title">.</span></h1>
+
+        <div class="description">
+            <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos
+                los jueves cada 15 días.
+            </p>
+        </div>
+        <button class="btn btn-conoce-mas">Conoce más</button>
+    </section>
+
+
 </body>
 
 </html>
