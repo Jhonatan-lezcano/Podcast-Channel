@@ -289,7 +289,7 @@
 
 .tituloANT {
   width: 80%;
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 
 .imagenes {
@@ -456,6 +456,7 @@
     position: absolute;
     top: -90px;
     left: 0;
+    user-select: none;
   }
 
   .informacion {
