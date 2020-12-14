@@ -7,7 +7,6 @@
 
 :root {
   font-size: 10px;
-  max-width: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -227,8 +226,14 @@
 
 /* Sección de donde venimos */
 .de-donde-venimos {
-  position: relative;
   height: 520px;
+  display: grid;
+  border: 1px dashed black;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contenedor-phone {
+  position: relative;
 }
 
 .phone {
@@ -236,14 +241,14 @@
   height: 610px;
   position: absolute;
   top: -175px;
-  left: 175px;
+  left: 24%;
 }
 
 .informacion {
   width: 464px;
-  position: absolute;
-  right: 210px;
-  top: 0px;
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
 }
 
 .d_donde_v {
@@ -266,12 +271,8 @@
 
 .container-grid {
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  grid-template-rows: 364px 364px;
-}
-
-.container-img {
-  background-color: grey;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .img {
@@ -488,14 +489,6 @@
     grid-template-rows: repeat(6, 243px);
   }
 
-  .container-img {
-    background-color: grey;
-  }
-
-  .img {
-    width: 100%;
-    height: 100%;
-  }
   /* Fin sección invitadas/os estelares */
 
   /* sección algunos de nuestros temas */
@@ -586,4 +579,42 @@
   }
   /* fin Footer*/
 }
-/* End Media Queries mobile*/
+/* Fin Media Queries mobile*/
+
+/*media query Tablet*/
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .tamaño_titulo {
+    font-size: 4rem;
+    font-weight: lighter;
+  }
+  /* Sección de donde venimos */
+  .de-donde-venimos {
+    height: 520px;
+    display: grid;
+    border: 1px dashed black;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contenedor-phone {
+    position: relative;
+  }
+
+  .phone {
+    width: 357px;
+    height: 580px;
+    position: absolute;
+    top: -175px;
+    left: 9%;
+  }
+
+  .informacion {
+    width: 400px;
+    grid-column: 2;
+  }
+
+  .d_donde_v {
+    font-size: 1.5rem;
+  }
+  /* Fin sección de donde venimos */
+}
+/*Fin media query Tablet*/
