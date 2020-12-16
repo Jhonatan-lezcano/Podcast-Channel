@@ -587,11 +587,52 @@
     font-size: 4rem;
     font-weight: lighter;
   }
+
+  /* Menu */
+  .menu-container {
+    width: 55%;
+  }
+  /* Fin Menu */
+
+  /* Sección hello world */
+  .hello-world {
+    padding: 80px 0 0 100px;
+  }
+
+  .titleH {
+    font-size: 5rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+  }
+
+  .btn-conoce-mas {
+    margin-top: 50px;
+  }
+  /* fin sección hello world*/
+
+  /* Sección Episodios */
+  .tituloE {
+    position: absolute;
+    left: 10%;
+    top: 14%;
+  }
+
+  .episodios {
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    height: 900px;
+  }
+
+  .podcast_container {
+    grid-gap: 30px;
+  }
+  /* fin sección Episodios */
+
   /* Sección de donde venimos */
   .de-donde-venimos {
-    height: 520px;
+    height: 470px;
     display: grid;
-    border: 1px dashed black;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -603,7 +644,7 @@
     width: 357px;
     height: 580px;
     position: absolute;
-    top: -175px;
+    top: -140px;
     left: 9%;
   }
 
@@ -616,5 +657,45 @@
     font-size: 1.5rem;
   }
   /* Fin sección de donde venimos */
+
+  /* sección algunos de nuestros temas */
+  .nuestros-temas {
+    padding: 40px 0 10px 0;
+  }
+
+  .tituloANT {
+    margin-bottom: 50px;
+  }
+
+  .imagenes {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .imagenes .contenedor-temas .icono-tema {
+    width: 70px;
+  }
+
+  .imagenes .contenedor-temas .tema {
+    margin-top: 15px;
+    font-size: 1.8rem;
+    width: 150px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  /* fin sección algunos de nuestros temas */
+
+  /* sección ultimas novedades */
+  .ultimas-novedades {
+    height: 320px;
+    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* fin sección ultimas novedades */
 }
 /*Fin media query Tablet*/
+/* sección ultimas novedades */
