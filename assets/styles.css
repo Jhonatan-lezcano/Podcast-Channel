@@ -626,6 +626,10 @@
   }
 
   /* Menu */
+  .navbar {
+    height: 60px;
+  }
+
   .menu-container {
     width: 55%;
   }
