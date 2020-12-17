@@ -64,6 +64,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .logo-container {
@@ -124,25 +128,27 @@
 .menu-mobile {
   background: rgb(0, 0, 236);
   font-size: 1.6rem;
-  transition: all 1s ease;
   position: absolute;
   top: 80px;
   width: 100%;
-  display: none;
+  transform: translateY(-140%);
+  transition: all 0.7s ease;
+  z-index: -1;
 }
 
 .menu-mobile-item {
   height: 50px;
   display: flex;
-  align-items: center;
-  padding-left: 20px;
   transition: all 0.5s ease;
   list-style-type: none;
 }
 
-.menu-mobile-item a {
+.menu-mobile-item .nav {
   text-decoration: none;
   color: white;
+  width: 100%;
+  height: 100%;
+  padding: 14px 0 0 20px;
 }
 
 .check-menu {
@@ -150,7 +156,7 @@
 }
 
 .check-menu:checked ~ .menu-mobile {
-  display: block;
+  transform: translateY(0);
 }
 
 .check-menu:checked + .container-burger .burger .linea-top {
@@ -222,13 +228,13 @@
   grid-template-rows: repeat(2, 232px);
   grid-gap: 72px;
 }
+
 /* fin Sección Episodios */
 
 /* Sección de donde venimos */
 .de-donde-venimos {
   height: 520px;
   display: grid;
-  border: 1px dashed black;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -363,10 +369,32 @@
   cursor: pointer;
   color: #060a24;
 }
+
+.redes-sociales .iconos .sptf:hover {
+  color: #00bb2d;
+}
+
+.redes-sociales .iconos .instgrm:hover {
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.redes-sociales .iconos .twttr:hover {
+  color: #00acee;
+}
+
+.redes-sociales .iconos .fcbk:hover {
+  color: #3b5998;
+}
+
+.redes-sociales .iconos .tlgrm:hover {
+  color: #0088cc;
+}
 /* fin Footer*/
 
 /* Media Queries mobile*/
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   /* Reutilizables */
   .btn {
     height: 48px;
@@ -404,29 +432,28 @@
 
   .menu-mobile {
     top: 44px;
-    display: none;
   }
   /* fin menu hamburger */
 
   /* sección hello world */
   .hello-world {
-    padding: 29px 0 0 15px;
-    height: 285px;
+    padding: 74px 0 0 5%;
+    height: 380px;
   }
 
   .titleH {
     font-size: 3.6rem;
-    width: 221px;
+    width: 77%;
   }
 
   .description {
-    width: 288px;
-    font-size: 1.1rem;
+    width: 90%;
+    font-size: 1.4rem;
     margin-top: 10px;
   }
 
   .btn-conoce-mas {
-    width: 288px;
+    width: 95%;
     margin-top: 35px;
   }
   /* fin sección hello world */
@@ -438,7 +465,7 @@
   }
 
   .tituloE {
-    left: 10px;
+    left: 7%;
     top: 60px;
   }
 
@@ -452,7 +479,23 @@
   /* Sección de donde venimos */
   .de-donde-venimos {
     height: 760px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
+
+  .contenedor-phone {
+    position: relative;
+  }
+
+  .informacion {
+    grid-row: 2;
+    width: 95%;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
   .phone {
     width: 320px;
     height: 479px;
@@ -460,13 +503,6 @@
     top: -90px;
     left: 0;
     user-select: none;
-  }
-
-  .informacion {
-    width: 288px;
-    position: absolute;
-    left: 16px;
-    top: 420px;
   }
 
   .d_donde_v {
@@ -485,8 +521,8 @@
 
   .container-grid {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(6, 243px);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
   }
 
   /* Fin sección invitadas/os estelares */
@@ -542,6 +578,7 @@
   .tituloQUN {
     margin: 36px 0;
     width: 190px;
+    text-align: center;
   }
 
   .btn-escucha-episodios {
