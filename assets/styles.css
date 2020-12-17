@@ -137,7 +137,6 @@
   top: 80px;
   width: 100%;
   transform: translateY(-170%);
-  visibility: hidden;
   transition: all 0.7s ease;
   z-index: -1;
 }
@@ -163,7 +162,6 @@
 
 .check-menu:checked ~ .menu-mobile {
   transform: translateY(0);
-  visibility: visible;
 }
 
 .check-menu:checked + .container-burger .burger .linea-top {
