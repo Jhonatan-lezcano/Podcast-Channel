@@ -136,7 +136,7 @@
   position: absolute;
   top: 80px;
   width: 100%;
-  transform: translateY(-140%);
+  transform: translateY(-170%);
   transition: all 0.7s ease;
   z-index: -1;
 }
