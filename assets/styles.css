@@ -180,7 +180,10 @@
 /* Sección hello world */
 .hello-world {
   padding: 115px 0 0 145px;
-  height: 369px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .titleH {
@@ -200,6 +203,9 @@
 .btn-conoce-mas {
   width: 226px;
   margin-top: 60px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 16px;
 }
 
 .world {
@@ -340,6 +346,9 @@
 
 .btn-escucha-episodios {
   width: 345px;
+  padding-top: 16px;
+  text-decoration: none;
+  text-align: center;
 }
 /* fin sección ultimas novedades */
 
@@ -458,6 +467,7 @@
   .btn-conoce-mas {
     width: 95%;
     margin-top: 35px;
+    padding-top: 14px;
   }
   /* fin sección hello world */
 
@@ -581,7 +591,8 @@
   }
 
   .btn-escucha-episodios {
-    width: 288px;
+    width: 95%;
+    padding-top: 14px;
   }
   /* fin sección ultimas novedades */
 
