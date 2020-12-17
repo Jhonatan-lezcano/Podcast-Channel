@@ -9,6 +9,7 @@
   font-size: 10px;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  --gradient: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
 }
 /* Reutilizables */
 .fontF-title {
@@ -57,7 +58,7 @@
 }
 
 .contenedor-global::-webkit-scrollbar-thumb {
-  background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  background: var(--gradient);
   border-radius: 10px;
 }
 /* Fin scroll personalizado */
@@ -208,7 +209,7 @@
 
 /* Sección Episodios */
 .episodios {
-  background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  background: var(--gradient);
   height: 1042px;
   display: flex;
   flex-direction: column;
@@ -325,7 +326,7 @@
 /* sección ultimas novedades */
 .ultimas-novedades {
   height: 518px;
-  background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  background: var(--gradient);
   clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
   display: flex;
   flex-direction: column;
