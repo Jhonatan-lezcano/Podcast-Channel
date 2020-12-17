@@ -36,9 +36,13 @@
   color: white;
 }
 
-.tamaño_titulo {
+.font_size_titulo {
   font-size: 4.6rem;
   font-weight: lighter;
+}
+
+.font_size_texto {
+  font-size: 1.6rem;
 }
 
 .ttl_blanco {
@@ -189,7 +193,6 @@
 
 .description {
   width: 590px;
-  font-size: 1.5rem;
   margin-top: 10px;
 }
 
@@ -255,10 +258,6 @@
   display: flex;
   flex-direction: column;
   grid-column: 2;
-}
-
-.d_donde_v {
-  font-size: 1.6rem;
 }
 
 .tituloDDV {
@@ -401,8 +400,12 @@
     font-size: 1.6rem;
   }
 
-  .tamaño_titulo {
+  .font_size_titulo {
     font-size: 3.6rem;
+  }
+
+  .font_size_texto {
+    font-size: 1.4rem;
   }
   /* fin Reutilizables */
 
@@ -448,7 +451,6 @@
 
   .description {
     width: 90%;
-    font-size: 1.4rem;
     margin-top: 10px;
   }
 
@@ -503,10 +505,6 @@
     top: -90px;
     left: 0;
     user-select: none;
-  }
-
-  .d_donde_v {
-    font-size: 1.4rem;
   }
 
   .tituloDDV {
@@ -620,9 +618,12 @@
 
 /*media query Tablet*/
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-  .tamaño_titulo {
+  .font_size_titulo {
     font-size: 4rem;
-    font-weight: lighter;
+  }
+
+  .font_size_texto {
+    font-size: 1.5rem;
   }
 
   /* Menu */
@@ -642,10 +643,6 @@
 
   .titleH {
     font-size: 5rem;
-  }
-
-  .description {
-    font-size: 1.5rem;
   }
 
   .btn-conoce-mas {
@@ -694,9 +691,6 @@
     grid-column: 2;
   }
 
-  .d_donde_v {
-    font-size: 1.5rem;
-  }
   /* Fin sección de donde venimos */
 
   /* sección algunos de nuestros temas */
